@@ -12,7 +12,7 @@ Passo a passo para excutar o projeto localmente:
  2 - Clone o projeto
  3 - Execute em sua IDE de preferência (sugestão InteliiJ)
  
- Para testar a API utilize o Postman para extutar as requisições:
+ Para testar a API utilize o Postman para executar as requisições:
  
  Endpoints da API
  
@@ -42,6 +42,6 @@ Passo a passo para excutar o projeto localmente:
  GET (Busca um contato por id):
  https://contatos-api-heroku.herokuapp.com/api/contatos/id ---> (ID que deseja deletar)
  
- DELELE(Deleta um contato)
+ DELETE(Deleta um contato)
  https://contatos-api-heroku.herokuapp.com/api/contatos/id ---> (ID que deseja deletar)
  
