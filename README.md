@@ -27,7 +27,7 @@ Passo a passo para excutar o projeto localmente:
  }
  
  PUT(Atualiza contato já existente)
- http://localhost:8080/api/contatos
+ https://contatos-api-heroku.herokuapp.com/api/contatos
  {
     "id": 1
     "nome": "Nome Dev",
