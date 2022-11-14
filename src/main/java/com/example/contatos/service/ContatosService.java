@@ -32,6 +32,8 @@ public class ContatosService {
     }
 
     public Contato atualizarContato(Contato contato) {
+        contatosRepository.findById(contato.getId())
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
         return contatosRepository.save(contato);
     }
 
