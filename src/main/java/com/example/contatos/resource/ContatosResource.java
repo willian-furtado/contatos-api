@@ -23,7 +23,6 @@ public class ContatosResource {
     ContatosService contatosService;
 
     @PostMapping()
-    @ResponseStatus(HttpStatus.CREATED)
     public ResponseEntity<Contato> salvarContato(@RequestBody @Valid Contato contato) {
         Contato contatoSalvo = contatosService.salvarContato(contato);
         return new ResponseEntity<>(contatoSalvo, HttpStatus.CREATED);
@@ -36,7 +35,6 @@ public class ContatosResource {
     }
 
     @GetMapping
-    @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<List<Contato>> listarContatos() {
         List<Contato> contatos = contatosService.listarContatos();
         return new ResponseEntity<>(contatos, HttpStatus.OK);
@@ -49,7 +47,6 @@ public class ContatosResource {
     }
 
     @GetMapping("{id}")
-    @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<Optional<Contato>> buscarContatoPorId(@PathVariable Long id) {
         Optional<Contato> contato = contatosService.buscarContatoPorId(id);
         return new ResponseEntity<>(contato, HttpStatus.OK);
